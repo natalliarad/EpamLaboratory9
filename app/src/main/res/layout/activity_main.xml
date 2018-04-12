@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.natallia.radaman.customviewsmile.MainActivity">
+
+    <com.natallia.radaman.customviewsmile.SmileFaceView
+        android:id="@+id/smileFaceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"/>
+
+    <com.natallia.radaman.customviewsmile.SmileFaceView
+        android:id="@+id/happyButton"
+        android:layout_width="@dimen/face_button_dimen"
+        android:layout_height="@dimen/face_button_dimen"
+        android:layout_margin="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:borderColor="@color/white"
+        app:eyesColor="@color/white"
+        app:faceColor="@color/red"
+        app:mouthColor="@color/white"
+        app:state="happy" />
+
+    <com.natallia.radaman.customviewsmile.SmileFaceView
+        android:id="@+id/sadButton"
+        android:layout_width="@dimen/face_button_dimen"
+        android:layout_height="@dimen/face_button_dimen"
+        android:layout_margin="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:borderColor="@color/black"
+        app:eyesColor="@color/black"
+        app:faceColor="@color/light_grey"
+        app:mouthColor="@color/black"
+        app:state="sad" />
+
+</RelativeLayout>
